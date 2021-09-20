@@ -1,0 +1,329 @@
+
+
+
+.tout{
+   
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows:74px 73px 200px 300px 300px;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    grid-gap: 7px;
+    grid-template-areas:
+    "A A A A A"
+    "C B B B B"
+    "C D E F I"
+    "C G H H I"
+    "J J J J J"
+    }
+
+    
+      
+      /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+     
+        body{
+            background-color: rgb(61, 49, 49);
+            display: block;
+            
+           }
+      }
+      
+
+
+
+
+span{
+  
+    font-size: 20px;
+    text-align: center;
+    position: relative;  
+}
+
+span:nth-child(1){
+    grid-area: A;
+   
+    width: 1328px;
+    height: 81px;
+    top: 13px;
+ 
+    position: fixed; 
+   
+   
+}
+
+.ent1{
+    display: grid;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    
+}
+
+.want{
+    border: 2px solid white;
+    
+    color: red;
+    display: flex;
+    background-color:white;
+    font-size: 35px;
+    width: 133px;
+    height: 42px;
+    left: 0px;
+    position: relative;
+    animation: want 1.7s ease-out;
+}
+
+.Go{
+    color: red;
+    font-size: 40px;
+    left: 15px;
+    height: 42px;
+    border: 2px solid white;
+
+    display: flex;
+    background-color:white;
+    font-size: 35px;
+    width: 40px;
+    height: 42px;
+    left: 20px;
+
+}
+
+
+
+@keyframes want{
+    from{
+        opacity: 0;
+        left: 0px;
+    }
+    to {
+        opacity: 1;
+        left: 500px;
+    }
+}
+
+
+.veux{
+    display: flex;
+    border: 2px solid 228, 220, 220;
+    border-radius: 5px;
+    color: rgb(3, 68, 3);
+    
+   
+    font-size: 35px;
+    width: 229px;
+    height: 0px;
+    left: 24px;
+   margin: 45px;
+    position: relative;
+    animation: veux 1.9s ease-out;
+
+}
+
+@keyframes veux{
+    from{
+        opacity: 0;
+        top: 200px;
+    }
+    to {
+        opacity: 1;
+        bottom: 500px;
+
+    }
+}
+.log{
+    
+    background-color: rgb(3, 68, 3);
+    color: white;
+    border-radius: 10px;
+    margin: 40px;
+    margin-left: 630px;
+    font-size: 30px;
+    width: 130px;
+    height: 35px;
+}
+
+
+
+span>nav>ul{
+    display: flex;
+    flex-direction:row;
+    list-style-type: none;
+   
+}
+
+a{
+    
+    width: 40px; height: 40px;
+    color:white;
+    font: bold;
+    font-size: 22px;
+    text-decoration: none;
+
+}
+
+span:nth-child(2){
+    grid-area: B;
+    background-color:rgb(3, 68, 3);
+    width: 1077px;
+    height: 80px;
+    left: 145px;
+}
+
+
+span:nth-child(3){
+    grid-area: C;
+  
+    width: 252px;
+    height: 720px;
+  
+    
+}
+
+.menu{
+    height: 39px;
+    font-size: 20px;
+}
+
+
+
+
+ul> li{
+    display: grid;
+    flex-direction: column;
+    display: flexbox;
+    justify-content:space-between;
+    padding-top: 5px;
+    width: 150px;
+    height: 20px;
+    list-style: none;
+    font-size: 20PX;
+    text-align:left; 
+    color: red; 
+}
+
+
+span:nth-child(4){
+    grid-area: D;
+    width: 262px;
+    left: 145px;
+    height: 250px;
+}
+
+span:nth-child(5){
+    grid-area: E;
+    left: 300px;
+    width: 289px;
+    height: 250px;
+}
+
+span:nth-child(6){
+    grid-area: F;
+   
+    left:482px;
+    width: 350px;
+    height: 250px;
+}
+
+span:nth-child(7){
+    grid-area: G;
+   
+    left: 145px;
+    width: 462px;
+    height: 307px;
+}
+
+span:nth-child(8){
+    grid-area: H;
+  
+   left: 550px;
+   width: 300px;
+   height: 307px;
+   bottom: 30px;
+}
+
+span:nth-child(9){
+    grid-area: I;
+    background-color: rgb(3, 68, 3);
+   left: 710px;
+   width: 191px;
+   height: 514px;
+}
+
+.sam{
+    display: grid;
+    color: #ffff;
+    font-size: 25px;
+   margin: 15px;
+    display: flex;
+    justify-content: safe;
+    flex-direction: column; 
+    position: relative;
+    animation: sam 1.5s ease-in;  
+}
+
+@keyframes sam{
+    from{
+        opacity: 0;
+        left: 88px;
+    }
+    to{
+        opacity: 1;
+        left: 0px;
+    }
+}
+.ficheClient{
+    grid-area: J;
+    background-color: skyblue;
+    width: 1330px;
+    height: 460px;
+    text-align: center;
+    border: 1px solid black;
+    
+   
+  
+}
+
+.FicheA{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+}
+
+.etatCivil{
+    width: 350px;
+}
+
+.loisir{
+    width: 352px;
+}
+
+.avis{
+    width: 400px;
+   
+}
+
+.zonedeText{
+    background-color: rgb(219, 231, 236);
+}
+
+.envoie{
+    background-color: forestgreen;
+    border: 2px solid forestgreen;
+    border-radius: 5px;
+    height: 30px;
+    width: 80px;
+   
+}
+
+.raz{
+    background-color: rgb(252, 8, 8);
+    border: 2px solid rgb(252, 8, 8);
+    border-radius: 5px;
+    height: 29px;
+    width: 80px;
+}
+
+.info{
+    color: red;
+}
